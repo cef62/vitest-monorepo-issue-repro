@@ -20,3 +20,6 @@ test: {
   [..]
 },
 ```
+
+Install the project dependencies with `pnpm install --frozen-lockfile` and then run `pnpm start` to reproduce the issue.
+Uncomment line 16 in [vite.config.ts](packages/other-library/vite.config.ts), to have the tests pass.

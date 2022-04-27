@@ -13,7 +13,7 @@ export default defineConfig(() => {
       reporters: 'default',
       include: ['src/**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
       deps: {
-        inline: [/\/packages\/.*\/esm\/(.*\.js)$/],
+        // inline: [/\/packages\/.*\/esm\/(.*\.js)$/],
       },
     },
   } as UserConfig
