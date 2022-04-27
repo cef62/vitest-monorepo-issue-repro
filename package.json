@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "vitest-monorepo-example",
+  "license": "MIT",
+  "author": "Matteo Ronchi <matteo.ronchi@gmail.com> (https://github.com/cef62)",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "typescript": "4.6.3"
+  },
+  "engines": {
+    "node": ">=16.3.0",
+    "pnpm": ">=6.23.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "@my-org/my-utilities": "workspace:*",
+      "@my-org/other-library": "workspace:*"
+    }
+  }
+}

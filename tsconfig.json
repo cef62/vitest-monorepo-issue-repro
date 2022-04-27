@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES2019",
+    "strict": true,
+    "module": "ES2020",
+    "sourceMap": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "importsNotUsedAsValues": "remove",
+    "forceConsistentCasingInFileNames": true
+  }
+}

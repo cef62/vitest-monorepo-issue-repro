@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "name": "@my-org/other-library",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build-esm": "tsc -p tsconfig.esm.json",
+    "build-dts": "tsc -p tsconfig.dts.json",
+    "build": "pnpm clean && pnpm build-esm && pnpm build-dts",
+    "test": "vitest"
+  },
+  "author": "Matteo Ronchi <matteo.ronchi@gmail.com> (https://github.com/cef62)",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "3.0.2",
+    "typescript": "4.6.3",
+    "vite": "2.9.6",
+    "vitest": "0.10.0"
+  },
+  "dependencies": {
+    "@my-org/my-utilities": "0.0.1",
+    "tslib": "2.4.0"
+  }
+}
